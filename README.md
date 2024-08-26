@@ -1,15 +1,10 @@
-## [RELEASE] vMenu Addon List Formatter for Vehicle Spawn Codes
-
-### Description:
-
-Introducing the **vMenu Addon List Formatter**, a tool designed to simplify the process of adding vehicle spawn codes to your vMenu addon list. This tool will find all the spawn codes in any vehicle pack you upload to it, and print it into a (`.txt`) file, in the correct format to just be pasted directly into your vMenu `addons.json` folder, without you having to manually copy and paste each spawn code! 
+Introducing the **vMenu Addon List Formatter**, a tool designed to simplify the process of adding vehicle spawn codes to your vMenu addon list. This tool will find all the spawn codes in any folder you select, and print it into a (`.txt`) file, in the correct format to just be pasted directly into your vMenu `addons.json` folder, without you having to manually copy and paste each spawn code!
 
 ### Features:
 
 * **Automatic Formatting**: Converts vehicle spawn codes into the correct format for vMenus addon.json.
 * **Easy to Use**: Simple interface that allows you to quickly generate your formatted list.
-* **Batch Processing**: Supports multiple spawn codes at once.
-* **Custom Output Directory**: Automatically saves the formatted list to an `outputs` folder.
+* **Bulk Support**: Works for one vehicle, or multiple vehicles, as long as you just select the folder containing everything.
 
 ### How It Works:
 
@@ -24,3 +19,15 @@ Introducing the **vMenu Addon List Formatter**, a tool designed to simplify the 
 2. Extract it with winRAR.
 3. Run the .exe inside the folder.
 4. Enjoy!
+
+
+[FiveMSpawnCodeConvertor.rar|attachment](upload://5OpRc8WcC6D8VdELXd8juDZ2nac.rar) (9.8 MB)
+
+https://github.com/ChlWhite/FiveMvMenuSpawnCodeConvertor
+
+### Screenshots:
+
+![image|627x32](upload://2dm0pbWD1pUqH3CytIz2s59Xhhd.png)
+![image|690x492](upload://sqKrXOEyiEh9JBOfiTLgKvGFDVd.png)
+![image|690x133](upload://w8ARk90qYULLx8pHeLV3cZRD914.png)
+![image|244x500](upload://yLOEjkNyeTUIlsgn0VWJFrH1upH.png)
