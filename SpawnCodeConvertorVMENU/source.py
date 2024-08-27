@@ -1,0 +1,69 @@
+import os
+from tkinter import filedialog, Tk
+import datetime
+import sys
+from colorama import init, Fore, Style
+import keyboard
+init()
+
+def get_stream_folder():
+    root = Tk()
+    root.withdraw()
+    folder_path = filedialog.askdirectory(title='Select the Folder containing stream')
+    return folder_path
+
+def find_matching_files(stream_folder):
+    ytd_files = set()
+    ydd_files = set()
+    yft_files = set()
+    for root, dirs, files in os.walk(stream_folder):
+        for file in files:
+            if file.endswith('.ytd') and '_hi' not in file:
+                base_name = os.path.splitext(file)[0]
+                ytd_files.add(base_name)
+            elif file.endswith('.ydd') and '_hi' not in file:
+                base_name = os.path.splitext(file)[0]
+                ydd_files.add(base_name)
+            elif file.endswith('.yft') and '_hi' not in file:
+                base_name = os.path.splitext(file)[0]
+                yft_files.add(base_name)
+    matching_files = sorted(ytd_files & ydd_files | yft_files)
+    return matching_files
+
+def write_to_file(file_names, output_dir):
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+    output_file = os.path.join(output_dir, f'output_{timestamp}.txt')
+    with open(output_file, 'w') as f:
+        for name in file_names:
+            f.write(f'"{name}",\n')
+    print(f'Matching files have been written to {output_file}')
+
+def prompt_for_another_folder():
+    print(f'\nWould you like to convert another folder? {Fore.GREEN}[Y]{Style.RESET_ALL}/{Fore.RED}[N]{Style.RESET_ALL}')
+    while True:
+        if keyboard.is_pressed('y'):
+            return True
+        if keyboard.is_pressed('n'):
+            return False
+if __name__ == '__main__':
+    try:
+        if getattr(sys, 'frozen', False):
+            application_path = os.path.dirname(sys.executable)
+        else:
+            application_path = os.path.dirname(os.path.abspath(__file__))
+        output_dir = os.path.join(application_path, 'outputs')
+        while True:
+            stream_folder = get_stream_folder()
+            if stream_folder:
+                matching_files = find_matching_files(stream_folder)
+                write_to_file(matching_files, output_dir)
+            else:
+                print('No folder selected.')
+            if not prompt_for_another_folder():
+                print('Exiting...')
+                break
+    except Exception as e:
+        print(f'An error occurred: {e}')
+        input('Press Enter to close...')

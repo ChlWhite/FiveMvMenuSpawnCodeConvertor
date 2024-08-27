@@ -20,17 +20,12 @@ Introducing the **vMenu Addon List Formatter**, a tool designed to simplify the 
 3. Run the .exe inside the folder.
 4. Enjoy!
 
-
-[FiveMSpawnCodeConvertor.rar|attachment](upload://5OpRc8WcC6D8VdELXd8juDZ2nac.rar) (9.8 MB)
-
-https://github.com/ChlWhite/FiveMvMenuSpawnCodeConvertor
-
 ### Screenshots:
 
-![image|627x32](upload://2dm0pbWD1pUqH3CytIz2s59Xhhd.png)
-![image|690x492](upload://sqKrXOEyiEh9JBOfiTLgKvGFDVd.png)
-![image|690x133](upload://w8ARk90qYULLx8pHeLV3cZRD914.png)
-![image|244x500](upload://yLOEjkNyeTUIlsgn0VWJFrH1upH.png)
+![image|627x32](https://forum-cfx-re.akamaized.net/original/5X/0/f/8/6/0f86d13359ef97bf6f28ba5d86ba6ac2c489c387.png)
+![image|690x492](https://forum-cfx-re.akamaized.net/original/5X/c/7/4/2/c742f29173d43840579331b8e8c96cdddf46806f.png)
+![image|690x133](https://forum-cfx-re.akamaized.net/original/5X/e/1/3/e/e13e47136aa02e55f94177cfdb98230499cfcf5e.png)
+![image|244x500](https://forum-cfx-re.akamaized.net/original/5X/f/3/b/1/f3b1a7c63fc09e7f127eecaf6e94d68c5c21b2b9.png)
 
 
 DO NOT DISTRIBUTE
